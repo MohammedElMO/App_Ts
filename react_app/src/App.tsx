@@ -17,16 +17,10 @@ function App() {
     const [error,setError] = useState('')
 
   useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        const res = await axios.get<UIser[]>("https://jsonplaceholder.typicode.com/3users")
-        setUser(res.data)
-        
-      } catch (error ) {
-        setError((error as AxiosError).message)
-      }
-    }
-    fetchUsers() 
+    axios
+      .get<UIser[]>("https://jsonplaceholder.typicode.com/3users")
+       .then(res =>  setUser(res.data))
+        .catch((err:AxiosError )=> setError(err.message))
   },[])  
   
   return (
