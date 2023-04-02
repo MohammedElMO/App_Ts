@@ -1,0 +1,10 @@
+
+.btn{
+    border: 1px solid rgb(97, 8, 160);
+    border-radius: .25rem;
+    padding: .5rem .75rem;
+    margin: 2rem;
+    background-color: rgb(122, 14, 205);
+    text-align: center;
+    color: #fff;
+}

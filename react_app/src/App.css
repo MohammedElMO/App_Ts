@@ -1,0 +1,17 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    body{
+        height: 100vh;
+    }
+    .list-item{
+        @apply text-left px-3 py-2 border-2 shadow-md border-gray-300 rounded
+    }
+}
